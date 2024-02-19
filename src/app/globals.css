@@ -6,17 +6,17 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-}
+} */
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,10 +24,49 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */
 
-@layer utilities {
+/* @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 } */
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn ease-in-out 0.5s forwards;
+  }
+  .fade-in-delay1 {
+    opacity: 0;
+    animation: fadeIn ease-in-out 0.5s forwards;
+    animation-delay: 1s;
+  }
+  .fade-in-delay2 {
+    opacity: 0;
+    animation: fadeIn ease-in-out 0.5s forwards;
+    animation-delay: 2s;
+  }
+  .fade-in-delay3 {
+    opacity: 0;
+    animation: fadeIn ease-in-out 0.5s forwards;
+    animation-delay: 3s;
+  }
+  .fade-in-delay4 {
+    opacity: 0;
+    animation: fadeIn ease-in-out 0.5s forwards;
+    animation-delay: 4s;
+  }
+  .fade-in-delay5 {
+    opacity: 0;
+    animation: fadeIn ease-in-out 0.5s forwards;
+    animation-delay: 5s;
+  }
